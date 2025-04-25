@@ -152,7 +152,7 @@
     background-color: #60a5fa;
     color: white;
     padding: 0.3rem 0.8rem;
-    position: relative;
+    position: absolute;
     margin: 0.5rem;
     font-size: 0.75rem;
     border-radius: 5px;
