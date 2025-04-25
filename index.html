@@ -1,0 +1,157 @@
+<!-- Save this as index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Crave Creators</title>
+  <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <div class="logo">Eat Blog Repeat<span> — Blog & Share Food</span></div>
+    <nav>
+      <ul>
+        <li class="active"><a href="index.html">Home</a></li>
+        <li><a href="recipes.html">Recipes</a></li>
+        <li><a href="sharefood.html">Share Food</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Delicious Recipes,<br>Zero Waste</h1>
+      <p>Discover amazing recipes and join our mission to reduce food waste</p>
+      <div class="buttons">
+        <button><a href="recipes.html">Explore Recipes</a></button>
+        <button><a href="sharefood.html">Share Food</a></button>
+      </div>
+    </div>
+  </section>
+
+  <section class="featured-recipes">
+    <h2>Featured Recipes</h2>
+    <p>Our seasonal favorites and most-loved dishes</p>
+    <div class="recipes-container">
+      <div class="recipe-card">
+        <img src="https://images.unsplash.com/photo-1604908177633-747bb89c87cc?auto=format&fit=crop&w=600&q=80" alt="Pepper Chicken" />
+        <span class="badge">Spicy</span>
+        <div class="recipe-info">
+          <h3>Pepper Chicken</h3>
+          <p>Succulent chicken cooked with crushed pepper, garlic, and aromatic spices.</p>
+          <div class="meta"><span>⏱ 35 mins</span> <span>📃 Medium</span></div>
+          <a href="#">View Recipe</a>
+        </div>
+      </div>
+      <div class="recipe-card">
+        <img src="https://images.unsplash.com/photo-1630488559574-02d2d07e8d85?auto=format&fit=crop&w=600&q=80" alt="Veg Mushroom Shawarma" />
+        <span class="badge">Vegan</span>
+        <div class="recipe-info">
+          <h3>Veg Mushroom Shawarma</h3>
+          <p>Wrap with sautéed mushrooms, veggies & tahini sauce.</p>
+          <div class="meta"><span>⏱ 30 mins</span> <span>📃 Easy</span></div>
+          <a href="#">View Recipe</a>
+        </div>
+      </div>
+      <div class="recipe-card">
+        <img src="https://images.unsplash.com/photo-1590080876614-e3d3d078b055?auto=format&fit=crop&w=600&q=80" alt="Apricot Delight" />
+        <span class="badge">Dessert</span>
+        <div class="recipe-info">
+          <h3>Apricot Delight</h3>
+          <p>A sweet and tangy apricot dessert with cream and crushed biscuits.</p>
+          <div class="meta"><span>⏱ 20 mins</span> <span>📃 Easy</span></div>
+          <a href="#">View Recipe</a>
+        </div>
+      </div>
+    </div>
+    <div class="view-all">
+      <button><a href="recipes.html">View All Recipes</a></button>
+    </div>
+  </section>
+
+  <section class="share-food">
+    <div class="share-content">
+      <div class="share-text">
+        <h2>Share Your Leftover Food</h2>
+        <p>Join our mission to reduce food waste by sharing your excess food with those in need.</p>
+        <ul class="benefits">
+          <li>🌱 Reduce food waste</li>
+          <li>🤝 Help your community</li>
+          <li>♻️ Support sustainability</li>
+        </ul>
+        <button class="share-btn" onclick="window.location.href='sharefood.html'">Share Now</button>
+      </div>
+      <div class="share-image">
+        <img src="https://images.unsplash.com/photo-1615484477795-92751c9cfb48?auto=format&fit=crop&w=600&q=80" alt="Vegetables Market" />
+      </div>
+    </div>
+  </section>
+
+  <section class="community-stories">
+    <h2>Our Community Stories</h2>
+    <div class="testimonial-container">
+      <div class="testimonial active">
+        <p>"I cook in large batches. Sharing extras helped me connect with my community."</p>
+        <div class="profile">
+          <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Lakshmi">
+          <div><h4>Lakshmi</h4><span>Home Cook</span></div>
+        </div>
+      </div>
+      <div class="testimonial">
+        <p>"It’s heartwarming to know someone else benefits from my leftovers."</p>
+        <div class="profile">
+          <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Venkat">
+          <div><h4>Venkat</h4><span>Volunteer</span></div>
+        </div>
+      </div>
+      <div class="testimonial">
+        <p>"I met amazing people and reduced waste. It’s a simple way to give back."</p>
+        <div class="profile">
+          <img src="https://randomuser.me/api/portraits/women/22.jpg" alt="Rithu">
+          <div><h4>Rithu</h4><span>Student</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-nav">
+      <button class="circle" id="prev">&#8249;</button>
+      <button class="circle" id="next">&#8250;</button>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-brand">
+        <h2>Eat Blog Repeat<span> — Blog & Share Food</span></h2>
+        <p>Bringing people together through food, kindness, and sustainability.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="recipes.html">Recipes</a></li>
+          <li><a href="sharefood.html">Share Food</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-social">
+        <h4>Connect</h4>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Eat.Blog.Repeat. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
