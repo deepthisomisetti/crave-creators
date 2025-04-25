@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Share Your Food | Eat Blog Repeat</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">Eat Blog Repeat <span> Share food</span></div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="recipes.html">Recipes</a></li>
+        <li class="active"><a href="sharefood.html">Share Food</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1>Share Your Food</h1>
+    <p>Please provide details about the food you're offering to share.</p>
+
+    <form id="foodForm">
+      <label for="type">Type of Food</label>
+      <select id="type" required>
+        <option disabled selected>Select food type</option>
+        <option>Cooked Meal</option>
+        <option>Bakery Items</option>
+        <option>Packaged Food</option>
+        <option>Fresh Produce</option>
+      </select>
+
+      <label for="description">Food Name/Description</label>
+      <input type="text" id="description" placeholder="e.g., Vegetable Lasagna, 3 portions" required />
+
+      <div class="row">
+        <div>
+          <label for="prep-date">Preparation Date</label>
+          <input type="date" id="prep-date" required />
+        </div>
+        <div>
+          <label for="expiry-date">Best Before Date</label>
+          <input type="date" id="expiry-date" required />
+        </div>
+      </div>
+
+      <fieldset>
+        <legend>Allergens (check all that apply)</legend>
+        <label><input type="checkbox" name="allergens" value="Gluten" /> Gluten</label>
+        <label><input type="checkbox" name="allergens" value="Dairy" /> Dairy</label>
+        <label><input type="checkbox" name="allergens" value="Nuts" /> Nuts</label>
+        <label><input type="checkbox" name="allergens" value="Eggs" /> Eggs</label>
+        <label><input type="checkbox" name="allergens" value="Soy" /> Soy</label>
+        <label><input type="checkbox" name="allergens" value="Seafood" /> Seafood</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Dietary Information (check all that apply)</legend>
+        <label><input type="checkbox" name="diet" value="Vegetarian" /> Vegetarian</label>
+        <label><input type="checkbox" name="diet" value="Vegan" /> Vegan</label>
+        <label><input type="checkbox" name="diet" value="Halal" /> Halal</label>
+        <label><input type="checkbox" name="diet" value="Kosher" /> Kosher</label>
+        <label><input type="checkbox" name="diet" value="Gluten-Free" /> Gluten-Free</label>
+      </fieldset>
+
+      <label for="pickup">Pickup/Delivery Info</label>
+      <textarea id="pickup" placeholder="Preferred pickup time and location"></textarea>
+
+      <div class="row">
+        <div>
+          <label for="name">Your Name</label>
+          <input type="text" id="name" required />
+        </div>
+        <div>
+          <label for="contact">Contact (Email or Phone)</label>
+          <input type="text" id="contact" required />
+        </div>
+      </div>
+
+      <label for="notes">Additional Notes</label>
+      <textarea id="notes" placeholder="Any other details you'd like to share"></textarea>
+
+      <label class="confirm">
+        <input type="checkbox" id="confirm" required />
+        I confirm that the food is safe to eat and has been stored properly.
+      </label>
+
+      <button type="submit">Submit Food Listing</button>
+    </form>
+  </main>
+
+  <section class="impact">
+    <h2>Our Impact</h2>
+    <div class="stats">
+      <div class="stat"><span>5</span><p>Meals Shared</p></div>
+      <div class="stat"><span>2</span><p>kg Food Waste Saved</p></div>
+      <div class="stat"><span>320</span><p>Active Food Sharers</p></div>
+    </div>
+  </section>
+
+  <script src="sharefood.js"></script>
+</body>
+</html>
